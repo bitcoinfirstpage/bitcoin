@@ -1,0 +1,62 @@
+.control{
+  padding: 0% 2.5%;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+grid-gap: .1rem;
+grid-template-rows: 40.64px;
+}
+
+.grid > div  {
+  background: url(imgs/bitcoin-purple-scaled.jpg) no-repeat;
+  background-size: cover;
+  padding: .60rem;
+}
+
+.grid > div::before {
+content: "";
+padding-bottom: 10%;
+display: block;
+}
+
+.grid > div {
+display: grid;
+}
+
+.grid > div:before,
+.grid > div > img
+ {grid-area: 1 / 1 / 1 / 1;
+ }
+
+.grid > div > img {
+width: 100%;
+height: 100%;
+}
+
+.grid > div > a > img
+ {grid-area: 1 / 1 / 1 / 1;
+ }
+
+.grid > div > a > img {
+width: 100%;
+height: 100%;
+}
+
+{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  text-align: center/* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
