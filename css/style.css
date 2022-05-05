@@ -60,3 +60,9 @@ height: 100%;
   display: table;
   clear: both;
 }
+
+a:link {
+  color: #5f26a0;
+  background-color: transparent;
+  text-decoration: none;
+}
